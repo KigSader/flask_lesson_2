@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная страница</title>
+</head>
+<body>
+    <p>Привет, {{ username }}<br>
+    Мы отправили вам письмо на почту {{ email }}<br></p>
+    <form method="post" action="{{ url_for('logout') }}">
+        <input type="submit" value="Выйти">
+    </form>
+</body>
+</html>
